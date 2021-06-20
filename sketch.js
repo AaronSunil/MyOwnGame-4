@@ -44,6 +44,11 @@ function setup() {
   player.addAnimation("player",playerImage)
   player.scale = 0.5;
 
+  player.isTouching(wall)
+  {
+    player.bounceOff(wall);
+  }
+
   //Enemy
   enemy1 = createSprite(300,200,25,25);
   enemy1.addAnimation("enemy",oenemyAnimation);
